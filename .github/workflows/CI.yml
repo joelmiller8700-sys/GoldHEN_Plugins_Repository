@@ -24,3 +24,9 @@ jobs:
           name: GoldHEN_Plugins_PRX
           path: |
             **/*.prx
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gtav_mod_menu
+          path: |
+            build/**/*.prx
